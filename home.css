@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT Bold', 'Comic Sans MS', sans-serif;
+    color: #6C544C;
+}
+
+body {
+    background-color: #FBBBB9; 
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(background.jpeg);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid  #FCD6D7; 
+    margin-bottom: 40px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-text {
+    font-size: 22px;
+    color: #6C544C; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6C544C;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #DE6B78;
+}
+.main-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #FCD6D7;
+    border-radius: 30px;
+    padding: 60px 40px;
+    position: relative; 
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.content-text {
+    width: 75%;
+    text-align: center;
+    z-index: 2; 
+}
+
+.judul-besar {
+    color: #C05865;
+    margin: 20px ;
+}
+.sub-judul {
+    color: #C05865; 
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.paragraf {
+    color: #7A5C52; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pembatas-bawah {
+    margin-top: 25px;
+    z-index: 2;
+}
+
+.pita-tengah {
+    width: 200px;
+}
+
+.ornamen {
+    position: absolute;
+    height: auto;
+}
+
+.pita-kiri {
+    top: 20px;
+    left: 20px;
+    width: 80px;
+}
+
+.pita-kanan {
+    top: 20px;
+    right: 20px;
+    width: 80px;
+}
+
+.ceri {
+    top: 40%;
+    right: 40px;
+    width: 50px;
+}
+
+.bunga-pink {
+    bottom: 40%;
+    left: 40px;
+    width: 40px;
+}
+
+.kelinci {
+    bottom: 20px;
+    left: 40px;
+    width: 60px;
+}
+
+.bunga-bawah {
+    bottom: 20px;
+    right: 40px;
+    width: 70px;
+}
+.home {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important; 
+    background-color: #DE6B78;        
+    color: white !important;          
+    padding: 12px 35px;               
+    border-radius: 25px;              
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(222, 107, 120, 0.3); 
+    transition: all 0.3s ease;        
+}
+
+.home:hover {
+    background-color: #C05865;      
+    transform: translateY(-3px);      
+    box-shadow: 0 6px 20px rgba(222, 107, 120, 0.5); 
+}
