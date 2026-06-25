@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alicia's Sweet Treats</title>
+    <title>Alicia's Sweet Treats - Menu</title>
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
@@ -11,15 +11,16 @@
     <nav class="navbar">
         <div class="nav-logo">
             <img src="logo-kue.png" alt="Logo Kue" class="logo-img">
-            <class="logo-text">Alicia’s Sweet Treats</span>
+            <span class="logo-text">Alicia’s Sweet Treats</span>
         </div>
         <div class="nav-links">
-            <a href="rumah_manis.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="daftarmenu.html" class="active">Menu</a>
             <a href="profil.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+
     <main class="main-container">
         
         <img src="pita_kiri.png" class="ornamen pita-kiri" alt="Pita Kiri">
@@ -30,70 +31,71 @@
         <img src="bunga_bawah.png" class="ornamen bunga-bawah" alt="Bunga Bawah">
         
         <div class="menu-wrapper">
-        <div class="menu-list">
-    <h1 class="daftar-menu-title">Daftar Menu 🍓</h1>
-    <a href="#detail-order" class="pilihan">
-        <span>🍩 Donat</span> 
-        <span class="menu-harga">Rp 30.000</span>
-    </a>
-    <a href="#detail-order" class="pilihan">
-        <span>🎂 Kue Ultah</span> 
-        <span class="menu-harga">Rp 85.000</span>
-    </a>
-    <a href="#detail-order" class="pilihan">
-        <span>🍫 Tiramisu</span> 
-        <span class="menu-harga">Rp 35.000</span>
-    </a>
-    <a href="#detail-order" class="pilihan">
-        <span>🍪 Cookies</span> 
-        <span class="menu-harga">Rp 25.000</span>
-    </a>
-    <a href="#detail-order" class="pilihan">
-        <span>🥮 Brownis</span> 
-        <span class="menu-harga">Rp 40.000</span>
-    </a>
-    </div>
-    <div class="menu-preview" id="detail-order">
-            <h2 class="form-title">Detail Pesanan ✨</h2>
+            
+            <div class="menu-list">
+                <h1 class="daftar-menu-title">Daftar Menu 🍓</h1>
+                <a href="#detail-order" class="pilihan">
+                    <span>🍩 Donat</span> 
+                    <span class="menu-harga">Rp 30.000</span>
+                </a>
+                <a href="#detail-order" class="pilihan">
+                    <span>🎂 Kue Ultah</span> 
+                    <span class="menu-harga">Rp 85.000</span>
+                </a>
+                <a href="#detail-order" class="pilihan">
+                    <span>🍫 Tiramisu</span> 
+                    <span class="menu-harga">Rp 35.000</span>
+                </a>
+                <a href="#detail-order" class="pilihan">
+                    <span>🍪 Cookies</span> 
+                    <span class="menu-harga">Rp 25.000</span>
+                </a>
+                <a href="#detail-order" class="pilihan">
+                    <span>🥮 Brownis</span> 
+                    <span class="menu-harga">Rp 40.000</span>
+                </a>
+            </div>
+            
+            <div class="menu-preview" id="detail-order">
+                <h2 class="form-title">Detail Pesanan ✨</h2>
 
-            <form action="#" class="order-form">
-    <div class="form-group">
-            <label for="nama">Pesanan Atas Nama: 📝</label>
-            <input type="text" id="nama" placeholder="Masukkan nama kamu..." class="input-style" autocomplete="off" required>
-    </div>
-    <div class="form-group">
-            <label for="pilih-kue">Mau pesan kue apa? 🍰</label>
-            <select id="pilih-kue" class="input-style" required>
-                <option value="" disabled selected>-- Pilih Kue Favoritmu --</option>
-                <option value="donat">🍩 Donat (Rp 30.000)</option>
-                <option value="kue-ultah">🎂 Kue Ultah (Rp 85.000)</option>
-                <option value="tiramisu">🍫 Tiramisu (Rp 35.000)</option>
-                <option value="cookies">🍪 Cookies (Rp 25.000)</option>
-                <option value="brownis">🥮 Brownis (Rp 40.000)</option>
-        </select>
-    </div>
-    <div class="form-group">
-                <label for="jumlah">Mau pesan berapa? 🍰</label>
-                <input type="number" id="jumlah" min="1" value="1" class="input-style">
-    </div>
-    <div class="form-group">
-                <label for="pembayaran">Metode Pembayaran 💳</label>
-                <select id="pembayaran" class="input-style">
-                <option value="qris">QRIS / Dana / OVO</option>
-                <option value="transfer">Transfer Bank (BCA/Mandiri)</option>
-                <option value="cod">COD (Bayar di Tempat)</option>
-                </select>
-        </div>
-        <div class="form-group">
-                <label for="catatan">Catatan (Tulisan di kue / request rasa):</label>
-                <textarea id="catatan" rows="3" class="input-style" placeholder="Contoh: Tulisan 'HBD bestie' ya..."></textarea>
-        </div>
-                <button type="submit" class="pesan-sekarang">Pesan Sekarang 🛍️</button>
-            </form>
-        </div>
-        
-        <div class="pembatas-bawah">
-        </div>
+                <form action="#" class="order-form">
+                    <div class="form-group">
+                        <label for="nama">Pesanan Atas Nama: 📝</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama kamu..." class="input-style" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pilih-kue">Mau pesan kue apa? 🍰</label>
+                        <select id="pilih-kue" class="input-style" required>
+                            <option value="" disabled selected>-- Pilih Kue Favoritmu --</option>
+                            <option value="donat">🍩 Donat (Rp 30.000)</option>
+                            <option value="kue-ultah">🎂 Kue Ultah (Rp 85.000)</option>
+                            <option value="tiramisu">🍫 Tiramisu (Rp 35.000)</option>
+                            <option value="cookies">🍪 Cookies (Rp 25.000)</option>
+                            <option value="brownis">🥮 Brownis (Rp 40.000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah">Mau pesan berapa? 🛍️</label>
+                        <input type="number" id="jumlah" min="1" value="1" class="input-style">
+                    </div>
+                    <div class="form-group">
+                        <label for="pembayaran">Metode Pembayaran 💳</label>
+                        <select id="pembayaran" class="input-style">
+                            <option value="qris">QRIS / Dana / OVO</option>
+                            <option value="transfer">Transfer Bank (BCA/Mandiri)</option>
+                            <option value="cod">COD (Bayar di Tempat)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="catatan">Catatan (Tulisan di kue / request rasa):</label>
+                        <textarea id="catatan" rows="3" class="input-style" placeholder="Contoh: Tulisan 'HBD bestie' ya..."></textarea>
+                    </div>
+                    <button type="submit" class="pesan-sekarang">Pesan Sekarang 🛍️</button>
+                </form>
+            </div>
+            
+        </div> <div class="pembatas-bawah"></div>
     </main>
 </body>
 </html>
