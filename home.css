@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,24 +8,28 @@
 
 body {
     background-color: #FBBBB9; 
-    padding-top: 10px;
+    padding: 20px 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(background.jpeg);
+    background: url(background.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
+/* NAVBAR */
 .navbar {
     width: 90%;
     max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.5) ;
-    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 15px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid  #FCD6D7; 
+    border-bottom: 5px solid #FCD6D7; 
     margin-bottom: 40px;
+    flex-wrap: wrap; 
+    gap: 15px;
 }
 
 .nav-logo {
@@ -41,27 +44,33 @@ body {
 }
 
 .logo-text {
-    font-size: 22px;
+    font-size: 1.3rem;
+    font-weight: bold;
     color: #6C544C; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #6C544C;
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: #DE6B78;
 }
+
 .main-container {
     width: 90%;
     max-width: 1000px;
     background-color: #FCD6D7;
     border-radius: 30px;
-    padding: 60px 40px;
+    padding: 60px 20px; 
     position: relative; 
     min-height: 450px;
     display: flex;
@@ -69,90 +78,49 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    overflow: hidden; 
 }
+
 .content-text {
-    width: 75%;
+    width: 85%; 
     text-align: center;
     z-index: 2; 
 }
 
 .judul-besar {
     color: #C05865;
-    margin: 20px ;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
 }
+
 .sub-judul {
     color: #C05865; 
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
     font-style: italic;
 }
 
 .paragraf {
     color: #7A5C52; 
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
-.pembatas-bawah {
+.cta-container {
+    text-align: center;
     margin-top: 25px;
     z-index: 2;
 }
 
-.pita-tengah {
-    width: 200px;
-}
-
-.ornamen {
-    position: absolute;
-    height: auto;
-}
-
-.pita-kiri {
-    top: 20px;
-    left: 20px;
-    width: 80px;
-}
-
-.pita-kanan {
-    top: 20px;
-    right: 20px;
-    width: 80px;
-}
-
-.ceri {
-    top: 40%;
-    right: 40px;
-    width: 50px;
-}
-
-.bunga-pink {
-    bottom: 40%;
-    left: 40px;
-    width: 40px;
-}
-
-.kelinci {
-    bottom: 20px;
-    left: 40px;
-    width: 60px;
-}
-
-.bunga-bawah {
-    bottom: 20px;
-    right: 40px;
-    width: 70px;
-}
 .home {
     display: inline-block;
-    text-align: center;
     text-decoration: none !important; 
     background-color: #DE6B78;        
     color: white !important;          
     padding: 12px 35px;               
     border-radius: 25px;              
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 20px;
     box-shadow: 0 4px 15px rgba(222, 107, 120, 0.3); 
     transition: all 0.3s ease;        
 }
@@ -161,4 +129,76 @@ body {
     background-color: #C05865;      
     transform: translateY(-3px);      
     box-shadow: 0 6px 20px rgba(222, 107, 120, 0.5); 
+}
+
+.pembatas-bawah {
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.pita-tengah {
+    width: 150px;
+    max-width: 100%;
+}
+
+.ornamen {
+    position: absolute;
+    height: auto;
+    opacity: 0.8; 
+}
+
+.pita-kiri { top: 20px; left: 20px; width: 70px; }
+.pita-kanan { top: 20px; right: 20px; width: 70px; }
+.ceri { top: 35px; right: 40px; width: 45px; }
+.bunga-pink { bottom: 40%; left: 30px; width: 35px; }
+.kelinci { bottom: 20px; left: 30px; width: 55px; }
+.bunga-bawah { bottom: 20px; right: 30px; width: 60px; }
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .main-container {
+        padding: 40px 15px;
+    }
+
+    .content-text {
+        width: 95%; 
+    }
+
+    .judul-besar {
+        font-size: 1.6rem; 
+    }
+
+    .sub-judul {
+        font-size: 0.95rem;
+    }
+
+    .paragraf {
+        font-size: 0.9rem;
+    }
+    .ceri, .bunga-pink {
+        display: none; 
+    }
+    
+    .pita-kiri, .pita-kanan {
+        width: 45px;
+    }
+
+    .kelinci, .bunga-bawah {
+        width: 40px; 
+        opacity: 0.5; 
+    }
 }
