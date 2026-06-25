@@ -1,40 +1,4 @@
-.about-section {
-    margin-bottom: 30px;
-    text-align: justify; 
-}
-
-.about-section h3 {
-    color: #DE6B78; 
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center; 
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr));
-    gap: 30px;
-}
-
-.about-features {
-    display: flex;
-    justify-content: center;
-    gap: 15px;         
-    margin-top: 20px;
-    flex-wrap: wrap;    
-}
-
-.feature-item {
-    background-color: #DE6B78; 
-    color: white;              
-    padding: 10px 22px;
-    border-radius: 25px;       
-    font-weight: bold;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
-}
-
-    * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,28 +6,30 @@
     color: #6C544C;
 }
 
-
 body {
     background-color: #FBBBB9; 
-    padding-top: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(background.jpeg);
+    background: url(background.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
-
+/* NAVBAR */
 .navbar {
     width: 90%;
     max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.5) ;
-    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 15px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid  #FCD6D7; 
+    border-bottom: 5px solid #FCD6D7; 
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .nav-logo {
@@ -78,15 +44,20 @@ body {
 }
 
 .logo-text {
-    font-size: 22px;
+    font-size: 1.3rem;
+    font-weight: bold;
     color: #6C544C; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #6C544C;
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
@@ -94,42 +65,75 @@ body {
     color: #DE6B78;
 }
 
-
 .main-container {
     width: 90%;
     max-width: 1000px;
     background-color: #FCD6D7;
     border-radius: 30px;
-    padding: 60px 40px;
+    padding: 50px 30px;
     position: relative; 
     min-height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
 }
-.content-text {
-    width: 75%;
+
+.about-container {
+    width: 100%;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
     text-align: center;
-    z-index: 2; 
-}
-
-.judul-besar {
     color: #C05865;
-    margin: 20px ;
-}
-.sub-judul {
-    color: #C05865; 
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-style: italic;
 }
 
-.paragraf {
-    color: #7A5C52; 
-    font-size: 16px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #DE6B78; 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(222, 107, 120, 0.15);
+}
+
+.card-badge {
+    background-color: #FFF0F1;
+    color: #DE6B78;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    color: #7A5C52;
+    font-size: 0.95rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .pembatas-bawah {
@@ -137,114 +141,59 @@ body {
     z-index: 2;
 }
 
-.pita-tengah {
-    width: 200px;
-}
-
 .ornamen {
     position: absolute;
     height: auto;
+    opacity: 0.7;
+    pointer-events: none;
 }
 
-.pita-kiri {
-    top: 20px;
-    left: 20px;
-    width: 80px;
-}
+.pita-kiri { top: 20px; left: 20px; width: 70px; }
+.pita-kanan { top: 20px; right: 20px; width: 70px; }
+.ceri { top: 20%; right: -20px; width: 45px; }
+.bunga-pink { top: 55%; left: -15px; width: 35px; }
+.kelinci { bottom: 15px; left: 15px; width: 50px; }
+.bunga-bawah { bottom: 15px; right: 15px; width: 55px; }
 
-.pita-kanan {
-    top: 20px;
-    right: 20px;
-    width: 80px;
-}
-
-.ceri {
-    top: 40%;
-    right: 40px;
-    width: 50px;
-}
-
-.bunga-pink {
-    bottom: 40%;
-    left: 40px;
-    width: 40px;
-}
-
-.kelinci {
-    bottom: 20px;
-    left: 40px;
-    width: 60px;
-}
-
-.bunga-bawah {
-    bottom: 20px;
-    right: 40px;
-    width: 70px;
-}
-
-.menu-list {
-    flex: 1;
-    display: flex;
+@media (max-width: 768px) {
+.navbar {
     flex-direction: column;
-    gap: 15px;
+    text-align: center;
+}
+    
+.nav-links {
+    justify-content: center;
+    width: 100%;
+}
+
+.main-container {
+    padding: 35px 15px;
 }
 
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
-    color: #6C544C;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr));
-    gap: 30px;
+    grid-template-columns: 1fr; 
+    gap: 20px;
 }
 
 .card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-    border-top: 5px solid #ff4a5a;
-    padding: 25px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-badge {
-    background-color: #ffeff1;
-    color: #ff4a5a;
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.card-body h4 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-.card-body p {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
     padding: 20px;
-    margin-top: 50px;
-    font-size: 0.9rem;
 }
 
+.ceri, .bunga-pink {
+    display: none;
+}
+
+.pita-kiri, .pita-kanan {
+    width: 45px;
+}
+
+.kelinci, .bunga-bawah {
+    width: 35px;
+    opacity: 0.4;
+}
+}
